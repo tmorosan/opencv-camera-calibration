@@ -27,7 +27,9 @@ if __name__ == "__main__":
     dst2 = cv2.remap(img, mapx, mapy, cv2.INTER_LINEAR)
 
     # Displaying the undistorted image
-    cv2.imshow("original", img)
-    cv2.imshow("undistorted image", dst)
-    cv2.imshow("undistorted 2", dst2)
-    cv2.waitKey(0)
+    # cv2.imshow("original", img)
+    # cv2.imshow("undistorted image", dst)
+    # cv2.imshow("undistorted 2", dst2)
+    cv2.imwrite("original.jpg", img)
+    cv2.imwrite("undistorted.jpg", dst2)
+    # cv2.waitKey(0)

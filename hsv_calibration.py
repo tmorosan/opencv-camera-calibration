@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
         cv2.imshow(WINDOWW_CAPTURE_NAME, image)
         cv2.imshow(WINDOWW_DETECTION_NAME, frame_threshold)
-        cv2.imshow("mask", res)
+        # cv2.imshow("mask", res)
 
         res = np.uint8(res)
         ret, corners = cv2.findChessboardCorners(res, (6, 9),
